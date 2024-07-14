@@ -3,6 +3,7 @@ using namespace std;
 void reacHome(int src,int dest)
 {
     //base case
+    cout<<"started from "<<src<<endl;
     if(src==dest)
 {
     cout<<"reached home"<<endl;
@@ -10,6 +11,7 @@ void reacHome(int src,int dest)
 //recursive case
 
 else{
+    
     cout<<"going to "<<src+1<<endl;
     reacHome(src+1,dest);
 }
