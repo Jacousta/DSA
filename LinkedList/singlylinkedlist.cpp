@@ -24,6 +24,13 @@ void insertAttail(Node* &tail,int data)
     tail=tail->next;
 
 }
+void between_start_next(Node*prev,Node*nex,int d)
+{
+    Node*temp=new Node(d);
+    temp->next=nex;
+    prev->next=temp;
+
+}
 void printll(Node* &head)
 {
     Node* temp=head;
@@ -40,7 +47,11 @@ int main()
     Node *node1=new Node(10);
     Node *head=node1;
     Node*tail=node1;
+    printll(head);
     insertAthead(head,20);
+    printll(head);
+    between_start_next(head,tail,50);
+    printll(head);
     insertAthead(head,30);
     printll(head);
     insertAttail(tail,40);
