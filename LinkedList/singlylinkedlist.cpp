@@ -58,7 +58,7 @@ void printll(Node* &head)
 void todelete(Node*head,int pos)
 {
     Node*temp=head;
-    //deleting head
+    //deleting head not working like this
     if(pos==1)
     {
        
