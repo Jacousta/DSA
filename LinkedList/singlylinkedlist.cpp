@@ -31,6 +31,19 @@ void between_start_next(Node*prev,Node*nex,int d)
     prev->next=temp;
 
 }
+void insertAtpostion(Node*&head,int k,int d)
+{
+    Node*temp=head;
+    int count=1;
+    while(count<k-1)
+    {
+        temp=temp->next;
+        count++;
+    }
+    Node*newnode=new Node(d);
+    newnode->next=temp->next;
+    temp->next=newnode;
+}
 void printll(Node* &head)
 {
     Node* temp=head;
