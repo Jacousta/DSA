@@ -55,6 +55,30 @@ void printll(Node* &head)
     }
     cout<<endl;
 }
+void todelete(Node*head,int pos)
+{
+    Node*temp=head;
+    //deleting head
+    if(pos==1)
+    {
+       
+       head=head->next;
+       temp->next=NULL;
+        delete temp;
+    }
+    else
+    {
+        int count=1;
+        while(count<pos-1)
+        {
+            temp=temp->next;
+            count++;
+            }
+            Node*temp1=temp->next;
+            temp->next=temp1->next;
+            delete temp1;
+            }
+}
 int main()
 {
     Node *node1=new Node(10);
@@ -69,5 +93,7 @@ int main()
     printll(head);
     insertAttail(tail,40);
     printll(head);//if we enter node1 then it will start from that position 
+    todelete(head,2);
+    printll(head);
 
 }
