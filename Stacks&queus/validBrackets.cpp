@@ -1,8 +1,13 @@
-
-
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <cmath>
+#include<stack>
+using namespace std;
 bool isValidParenthesis(string expression)
 {
-  	 stack<char> s;
+  	 stack<char>s;
      for(int i=0; i<expression.length(); i++) {
          
          char ch = expression[i];
@@ -39,4 +44,8 @@ bool isValidParenthesis(string expression)
         return true;
     else
         return false;
+}
+int main()
+{
+    
 }

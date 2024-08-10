@@ -1,3 +1,4 @@
+#include <iostream>
 #include<stack>
 
 bool findRedundantBrackets(string &s)
@@ -32,4 +33,9 @@ bool findRedundantBrackets(string &s)
         } 
     }
     return false;
+}
+using namespace std;
+int main()
+{
+    
 }

@@ -23,7 +23,6 @@ void sortStack(stack<int> &stack)
     
     	int num = stack.top();
     	stack.pop();
-    
     	//recursive call
     	sortStack(stack);
     
